@@ -214,9 +214,10 @@ header .btn{
     justify-content: center;
     padding: 22px 0;
     margin-bottom: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.26);
     font-weight: bold;
     box-shadow: -1px 2px 5px  rgba(255,255,255,0.9),
-                 3px 2px 5px rgba(0,0,0,0.2)
+                 3px 2px 10px rgba(0,0,0,0.2)
 }
 .first p{
     margin-left: 30px;
