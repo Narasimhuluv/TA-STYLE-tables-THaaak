@@ -1,0 +1,358 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------------------custom styles */
+.background_video{
+    position: relative;
+    background: linear-gradient(black, black);
+}
+.background_video video{
+    width: 100%;
+    opacity: 30%;
+    
+}
+/* --------------ANCHOR TAG */
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+/* ------------------------CONTAINER AND FLEX */
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center{
+    justify-content: center;
+}
+/* ---------------------------HEADER STYLING */
+.header{
+    width: 99.9%;
+    font-size: 0;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    border: 1px solid rgba(128, 128, 128, 0.61);
+    background-color: rgba(255, 255, 255, 0.219);
+}
+.header_heading{   
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+}
+.heading_color{
+    color: rgb(237,86,58);
+} 
+.nav li{
+    margin-left: 30px;
+}
+/* --------------------------- */
+.program_data{
+    text-align: center;
+    line-height: 1.7;
+}
+.program_heading{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.program blockquote, .ourclasses blockquote,
+.schedule blockquote {
+    padding:0px 380px;
+    color: grey;
+}
+
+.nav_active{
+    color: rgb(237,86,58);
+}
+.btn{
+    height: 50px;
+    border: none;
+    background: none;
+    background-color: rgb(237,86,58); ;
+}
+header .btn{
+    width: 100px;
+    margin-left: 25px;
+    background-color: rgb(237,86,58);;  
+}
+/* --------------------------------------- */
+.hero_section{
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    top: 50%;
+    color: white;
+    
+}
+.hero_sub_heading{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.hero_heading{
+    font-size: 85px;
+    font-weight: bolder;
+}
+.hero_btn{
+    padding: 20px;
+}
+/* ---------------------- */
+.program_section, .expert_section{
+    margin: 50px 0px;
+    line-height: 1.5;
+}
+.choose_program{
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+.program_features{
+    width: 40%;
+    line-height: 1.5;
+    align-items: unset;
+    margin-top: 50px;
+}
+.program_feature_icon img{
+    width: 80px;
+}
+.program_feature_data{
+    padding: 0 25px;
+}
+.program_feature_data h4{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.program_feature_data a{
+    color: tomato;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+/* -------------------------------- */
+.section_begin{
+    background: url(../media/cta-bg.jpg) no-repeat;
+    background-size: cover;
+    line-height:1.5;
+    height: 400px;
+}
+.section_begin blockquote{
+    width: 63%;
+    margin: auto;
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.begin{
+    text-align: center;
+    color: white;
+}
+.begin_heading{
+    font-size: 30px;
+}
+/* ----------------------------- */
+.classes{
+    align-items: unset;
+    margin-top: 50px;
+}
+.classes .shedule_training_left{
+    width: 25%; 
+}
+
+.shedule_training_left .first{
+    justify-content: center;
+    padding: 22px 0;
+    margin-bottom: 25px;
+    font-weight: bold;
+    box-shadow: -1px 2px 5px  rgba(255,255,255,0.9),
+                 3px 2px 5px rgba(0,0,0,0.2)
+}
+.first p{
+    margin-left: 30px;
+}
+
+.shedule_training_right{
+    width: 65%;
+}
+.shedule_training_right img{
+    width: 100%;
+}
+.shedule_training_right .heading{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.shedule_training_right p{
+    width: 95%;
+    color: grey;
+    margin: 10px 0;
+}
+.schedule_btn{
+    width: 100%;
+    height: 70px;
+}
+/* ----------------classes_schedule */
+
+.classes_schedule{
+    background: url(../media/schedule-bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 50px 0;
+}
+.classes_schedule .program_data{
+    color: white;
+}
+table, tr ,th, td{
+    border: 1px solid ;
+    padding: 10px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.schedule caption{
+    margin-bottom: 20px;
+}
+td{
+    width: 200px;
+    padding: 40px 0;
+    text-align: center;
+}
+ caption{
+    color: white;
+    margin: auto;
+    margin-top: 40px;
+    word-spacing: 25px;
+}
+/* -------------------EXPERT_SECTION */
+.expert_cards{
+    margin: 50px 0;
+}
+.expert_cards .card{
+    width: 27%;
+    border: 1px solid rgba(128, 128, 128, 0.322);
+    padding: 30px ;
+    box-shadow: -3px -3px 5px rgba(255,255,255,0.9),
+                3px 3px 5px rgba(0,0,0,0.3)
+}
+.expert_cards ul{
+    justify-content: unset;
+}
+.expert_cards a{
+    color: grey;
+    font-size: 25px;
+    margin-right: 20px;
+}
+.expert_cards .speciality{
+    display: block;
+    color: orangered;
+    margin: 10px  0;
+}
+.expert_cards .card_data img{
+    width: 100%;
+}
+.trainer_name{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 5px 0;
+}
+.expert_cards p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+/* --------------------map section */
+.map_section{
+    position: relative;
+}
+.map_section iframe{
+    width: 100%;
+    height: 700px;
+}
+.map_section .login_form{
+    width: 50%;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 71px;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+form{
+    background-color: white;
+    padding: 30px;
+}
+.login_form form input{
+    width: 47%;
+    height: 30px;
+    padding-left: 10px;
+    margin: 10px;
+}
+.login_form .subject{
+    width: 95.5%;
+}
+.login_form textarea{
+    width: 95.5%;
+    margin: 10px;
+    height: 300px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.login_form .btn{
+    margin-left: 10px;
+}
+/* ----------------------footer */
+
+.footer{
+    padding: 30px 0;
+    font-weight: bold;
+}
